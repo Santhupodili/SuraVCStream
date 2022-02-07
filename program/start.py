@@ -56,38 +56,36 @@ async def _human_time_duration(seconds):
 async def start_(client: Client, message: Message):
     await message.reply_text(
         f"""👋 **Welcome {message.from_user.mention()} !**\n
-🤖 [{BOT_NAME}](https://t.me/{BOT_USERNAME}) **Allows you to play music🎶 and video🎥 on groups through the Telegram Group video chat!**
+🤖 [{BOT_NAME}](https://t.me/{BOT_USERNAME}) **ʜᴇʏ.! ɴᴇɴᴜ ᴍᴇ ʙᴏᴛ ɴɪ 😁 ɴᴇɴᴜ ᴠᴄ ʟᴏ ᴀᴜᴅɪᴏ ᴀɴᴅ ᴠɪᴅᴇᴏ ᴘʟᴀʏ ᴄʜᴇᴛʜᴀ ɴᴀɴᴜ ᴀᴅᴅ ᴄʜᴇsᴜᴋᴏɴᴅɪ.!**
 
-📕 **Find out all the Bot's commands and how they work by clicking on the » 🛠️ Check Commands button!**
+😘 **ᴍᴇʀɪ ᴄᴏᴍᴍᴀɴᴅs ᴋɪɴᴅʜᴀ ᴄʜᴜᴅᴀᴠᴀᴄʜᴜ sɪᴍᴘʟᴇ ɢᴀ...» 😊 🅲🅾🅼🅼🅰🅽🅳🆂 ᴇ ʙᴜᴛᴛᴏɴ ᴜsᴇ ᴄʜᴇʏᴀɴᴅɪ!**
 
-🔖 **To know how to use this bot, please click on the » 📕 Read Basic Guide button!**
-
-👽 **To Deploy Your Own Source Click On The » 👉 My Source Code Button **
+🤓 **ɴᴇᴋᴜ ᴛᴇʟᴜsᴀ ɴᴀ ʙᴏᴛ ɴɪ ᴇʟᴀ ᴜsᴇ ᴄʜᴇʏᴀʟᴏ ᴛᴇʟɪʏᴀᴘᴏᴛʜᴇ ᴋɪɴᴅʜs ᴇ ʙᴜᴛᴛᴏɴ ᴄʟɪᴄᴋ ᴄʜᴇʏᴀɴᴅɪ» 🙃 🅱🅰🆂🅸🅲 🅶🆄🅸🅳🅴 🅱🆄🆃🆃🅾🅽 ɴɪ ᴜsᴇ ᴄʜᴇsɪ ɴᴀɴᴜ ᴇssᴀʏ ɢᴀ ᴍᴀɴᴀɢᴇ ᴄʜᴇʏᴀɴᴅɪ.!**
 """,
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "➕ Click to Add Me to your group ➕",
+                        "🔥 ɴᴀɴᴜ ᴀᴅᴅ ᴄʜᴇsᴜᴋᴏɴᴅɪ 💞",
                         url=f"https://t.me/{BOT_USERNAME}?startgroup=true",
                     )
                 ],
-                [InlineKeyboardButton("📕 Read Basic Guide", callback_data="cbhowtouse")],
+                [InlineKeyboardButton("😇 ʀᴇᴀᴅ ʙᴀsɪᴄ ɢᴜɪᴅᴇ", callback_data="cbhowtouse")],
                 [
-                    InlineKeyboardButton("🛠️ Check Commands", callback_data="cbcmds"),
-                    InlineKeyboardButton("💲Donate", url=f"https://t.me/{OWNER_NAME}"),
+                    InlineKeyboardButton("💞 sᴀɴᴛʜᴜ ᴄᴏᴍᴍᴀɴᴅs 😁", callback_data="cbcmds"),
+                    InlineKeyboardButton("🥺 ᴅᴏɴᴀᴛᴇ ᴘʟᴢ 🥺", url=f"https://t.me/{OWNER_NAME}"),
                 ],
                 [
                     InlineKeyboardButton(
-                        "👨🏾‍🤝‍👨🏼 Official Group", url=f"https://t.me/{GROUP_SUPPORT}"
+                        "💞 ᴏғғɪᴄɪᴀʟ ɴᴇᴛᴡᴏʀᴋ 📡", url=f"https://t.me/{GROUP_SUPPORT}"
                     ),
                     InlineKeyboardButton(
-                        "🔗 Official Channel", url=f"https://t.me/{UPDATES_CHANNEL}"
+                        "💓 ᴏғғɪᴄɪᴀʟ ᴄʜᴀɴɴᴇʟ 😁", url=f"https://t.me/{UPDATES_CHANNEL}"
                     ),
                 ],
                 [
                     InlineKeyboardButton(
-                       "👉 My Source Code", url="https://github.com/SRTheProgrammer/SuraVCStream"
+                       "😜 ᴍʏ ʀᴇᴘᴏ 💓", url="https://telegra.ph/TITLE-02-07-28"
                     )
                 ],
             ]
@@ -108,9 +106,9 @@ async def alive(c: Client, message: Message):
     keyboard = InlineKeyboardMarkup(
         [
             [
-                InlineKeyboardButton("👨🏾‍🤝‍👨🏼 Group", url=f"https://t.me/{GROUP_SUPPORT}"),
+                InlineKeyboardButton("😒 ᴏғғɪᴄɪᴀʟ ɴᴇᴛᴡᴏʀᴋ ☹️", url=f"https://t.me/{GROUP_SUPPORT}"),
                 InlineKeyboardButton(
-                    "🔗 Channel", url=f"https://t.me/{UPDATES_CHANNEL}"
+                    "🥰 ᴏғғɪᴄɪᴀʟ ɢʀᴏᴜᴘ 🥺", url=f"https://t.me/{UPDATES_CHANNEL}"
                 ),
             ]
         ]
@@ -164,11 +162,11 @@ async def new_chat(c: Client, m: Message):
                 reply_markup=InlineKeyboardMarkup(
                     [
                         [
-                            InlineKeyboardButton("📣 Channel", url=f"https://t.me/{UPDATES_CHANNEL}"),
-                            InlineKeyboardButton("👨🏾‍🤝‍👨🏼 Support", url=f"https://t.me/{GROUP_SUPPORT}")
+                            InlineKeyboardButton("☹️ ᴏғғɪᴄɪᴀʟ ɴᴇᴛᴡᴏʀᴋ 😒", url=f"https://t.me/{UPDATES_CHANNEL}"),
+                            InlineKeyboardButton("😘 ᴏғғɪᴄɪᴀʟ ɢʀᴏᴜᴘ 💞", url=f"https://t.me/{GROUP_SUPPORT}")
                         ],
                         [
-                            InlineKeyboardButton("👤 Assistant", url=f"https://t.me/{ass_uname}")
+                            InlineKeyboardButton("😒 ᴀssɪsᴛᴀɴᴛ 🔥", url=f"https://t.me/{ass_uname}")
                         ]
                     ]
                 )
