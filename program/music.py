@@ -139,7 +139,7 @@ async def play(c: Client, m: Message):
                 )
             else:
                 try:
-                    await suhu.edit("🔄 **Joining vc...**")
+                    await suhu.edit("🔥**ᴀɢᴜ ʀᴀ ɴɪʙʙᴀ ᴠᴄ ᴋɪ ᴊᴏɪɴ ᴀʏɪᴛʜᴜɴᴀ...**")
                     await call_py.join_group_call(
                         chat_id,
                         AudioPiped(
@@ -167,7 +167,7 @@ async def play(c: Client, m: Message):
                     "» reply to an **audio file** or **give something to search.**"
                 )
             else:
-                suhu = await c.send_message(chat_id, "🔍 **Searching...**")
+                suhu = await c.send_message(chat_id, "🔍 **ᴀɢᴜ ʀᴀ ɴɪʙʙᴀ sᴏɴɢ sᴇᴀʀᴄʜ ᴄʜᴇsᴛɴᴀ...**")
                 query = m.text.split(None, 1)[1]
                 search = ytsearch(query)
                 if search == 0:
@@ -200,7 +200,7 @@ async def play(c: Client, m: Message):
                             )
                         else:
                             try:
-                                await suhu.edit("🔄 **Joining vc...**")
+                                await suhu.edit("🔥**ᴀɢᴜ ʀᴀ ɴɪʙʙᴀ ᴠᴄ ᴋɪ ᴊᴏɪɴ ᴀʏɪᴛʜᴜɴᴀ...**")
                                 await call_py.join_group_call(
                                     chat_id,
                                     AudioPiped(
@@ -230,7 +230,7 @@ async def play(c: Client, m: Message):
                 "» reply to an **audio file** or **give something to search.**"
             )
         else:
-            suhu = await c.send_message(chat_id, "🔍 **Searching...**")
+            suhu = await c.send_message(chat_id, "🔍 **ᴀɢᴜ ʀᴀ ɴɪʙʙᴀ sᴏɴɢ sᴇᴀʀᴄʜ ᴄʜᴇsᴛɴᴀ...**")
             query = m.text.split(None, 1)[1]
             search = ytsearch(query)
             if search == 0:
@@ -261,7 +261,7 @@ async def play(c: Client, m: Message):
                         )
                     else:
                         try:
-                            await suhu.edit("🔄 **Joining vc...**")
+                            await suhu.edit("🔥**ᴀɢᴜ ʀᴀ ɴɪʙʙᴀ ᴠᴄ ᴋɪ ᴊᴏɪɴ ᴀʏɪᴛʜᴜɴᴀ...**")
                             await call_py.join_group_call(
                                 chat_id,
                                 AudioPiped(
