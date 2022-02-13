@@ -35,19 +35,20 @@ async def give_sysinfo(client, message):
     psutil.disk_io_counters()
     disk = f"{humanbytes(du.used)} / {humanbytes(du.total)} " f"({du.percent}%)"
     cpu_len = len(psutil.Process().cpu_affinity())
-    somsg = f"""🖥 **System Information**
+    somsg = f"""🖥 **sʏsᴛᴇᴍ ɪɴғᴏʀᴍᴀᴛɪᴏɴ**
     
-**PlatForm :** `{splatform}`
-**PlatForm - Release :** `{platform_release}`
-**PlatForm - Version :** `{platform_version}`
-**Architecture :** `{architecture}`
-**HostName :** `{hostname}`
-**IP :** `{ip_address}`
-**Mac :** `{mac_address}`
-**Processor :** `{processor}`
-**Ram : ** `{ram}`
-**CPU :** `{cpu_len}`
-**CPU FREQ :** `{cpu_freq}`
-**DISK :** `{disk}`
+**ᴘʟᴀᴛғᴏʀᴍ :** `{splatform}`
+**ᴘʟᴀᴛғᴏʀᴍ - ʀᴇʟᴇᴀsᴇ :** `{platform_release}`
+**ᴘʟᴀᴛғᴏʀᴍ - ᴠᴇʀsɪᴏɴ:** `{platform_version}`
+**ᴀʀᴄʜɪᴛᴇᴄᴛᴜʀᴇ :** `{architecture}`
+**ʜᴏsᴛ ɴᴀᴍᴇ:** `{hostname}`
+**ɪᴘ :** `{ip_address}`
+**ᴍᴀᴄ :** `{mac_address}`
+**ᴘʀᴏᴄᴇssᴏʀ :** `{processor}`
+**ʀᴀᴍ : ** `{ram}`
+**ᴄᴘᴜ :** `{cpu_len}`
+**ᴄᴘᴜ ғʀᴇǫ:** `{cpu_freq}`
+**ᴅɪsᴋ :** `{disk}`
+**ᴏᴡɴᴇʀ :** `{OWNER_NAME}`
     """
     await message.reply(somsg)
