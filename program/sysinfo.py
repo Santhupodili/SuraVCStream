@@ -49,6 +49,5 @@ async def give_sysinfo(client, message):
 **ᴄᴘᴜ :** `{cpu_len}`
 **ᴄᴘᴜ ғʀᴇǫ:** `{cpu_freq}`
 **ᴅɪsᴋ :** `{disk}`
-**ᴏᴡɴᴇʀ :** `{owner_name}`
     """
     await message.reply(somsg)
