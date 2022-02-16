@@ -21,7 +21,7 @@ async def thumb(thumbnail, title, userid, ctitle):
                 await f.write(await resp.read())
                 await f.close()
     image1 = Image.open(f"search/thumb{userid}.png")
-    image2 = Image.open("driver/source/LightBlue.png")
+    image2 = Image.open("driver/source/New Project 16 [E4C40F1].mp4")
     image3 = changeImageSize(1280, 720, image1)
     image4 = changeImageSize(1280, 720, image2)
     image5 = image3.convert("RGBA")
