@@ -51,7 +51,7 @@ back_mark = InlineKeyboardMarkup(
   [
     [
       InlineKeyboardButton(
-        "😇 ɴɪʙʙᴀ ʙᴀᴄᴋ", callback_data="cbmenu"
+        "◁", callback_data="cbmenu"
       )
     ]
   ]
