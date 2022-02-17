@@ -58,21 +58,21 @@ def updater():
 @sudo_users_only
 async def update_repo(_, message: Message):
     chat_id = message.chat.id
-    msg = await message.reply("🔄 `processing update...`")
+    msg = await message.reply("💝 `ᴘʀᴏᴄᴇssɪɴɢ ᴜᴘᴅᴀᴛᴇ...`")
     update_avail = updater()
     if update_avail:
-        await msg.edit("✅ update finished\n\n• bot restarted, back active again in 1 minutes.")
+        await msg.edit("😘 ᴜᴘᴅᴀᴛᴇ ғɪɴɪsʜᴇᴅ\n\n• ʙᴏᴛ ʀᴇsᴛᴀʀᴛᴇᴅ, ʙᴀᴄᴋ ᴀᴄᴛɪᴠᴇ ᴀɢᴀɪɴ ɪɴ 𝟷 ᴍɪɴᴜᴛᴇs.")
         system("git pull -f && pip3 install --no-cache-dir -r requirements.txt")
         execle(sys.executable, sys.executable, "main.py", environ)
         return
-    await msg.edit(f"bot is **up-to-date** with [main]({UPSTREAM_REPO}/tree/main)", disable_web_page_preview=True)
+    await msg.edit(f"bot is **ᴜᴘ-ᴛᴏ-ᴅᴀᴛᴇ** with [ᴍᴀɪɴ sᴀɴᴛʜᴜ]({UPSTREAM_REPO}/tree/main)", disable_web_page_preview=True)
 
 
 @Client.on_message(command(["restart", f"restart@{BOT_USERNAME}"]) & ~filters.edited)
 @sudo_users_only
 async def restart_bot(_, message: Message):
-    msg = await message.reply("`restarting bot...`")
+    msg = await message.reply("💖 `ʀᴇsᴛᴀʀᴛɪɴɢ ʙᴏᴛ...`")
     args = [sys.executable, "main.py"]
-    await msg.edit("✅ bot restarted\n\n• now you can use this bot again.")
+    await msg.edit("🎉 ʙᴏᴛ ʀᴇsᴛᴀʀᴛᴇᴅ\n\n• ɴᴏᴡ ʏᴏᴜ ᴄᴀɴ ᴜsᴇ ᴛʜɪs ʙᴏᴛ ᴀɢᴀɪɴ.")
     execle(sys.executable, *args, environ)
     return
