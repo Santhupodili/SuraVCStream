@@ -18,7 +18,7 @@ from config import BOT_NAME, SUDO_USERS, BOT_USERNAME as bn
 async def global_banned(c: Client, message: Message):
     if not message.reply_to_message:
         if len(message.command) < 2:
-            await message.reply_text("**usage:**\n\n/gban [username | user_id]")
+            await message.reply_text("**ᴜsᴀɢᴇ:**\n\n/gban [username | user_id]")
             return
         user = message.text.split(None, 2)[1]
         if "@" in user:
@@ -31,9 +31,9 @@ async def global_banned(c: Client, message: Message):
                 "You can't gban yourself !"
             )
         elif user.id == BOT_ID:
-            await message.reply_text("I can't gban myself !")
+            await message.reply_text("ɪ ᴄᴀɴ'ᴛ ɢʙᴀɴ ᴍʏsᴇʟғ !")
         elif user.id in SUDO_USERS:
-            await message.reply_text("You can't gban sudo user !")
+            await message.reply_text("ʏᴏᴜ ᴄᴀɴ'ᴛ ɢʙᴀɴ sᴜᴅᴏ ᴜsᴇʀ !")
         else:
             await add_gban_user(user.id)
             served_chats = []
@@ -41,7 +41,7 @@ async def global_banned(c: Client, message: Message):
             for chat in chats:
                 served_chats.append(int(chat["chat_id"]))
             m = await message.reply_text(
-                f"🚷 **Globally banning {user.mention}**\n⏱ Expected time: `{len(served_chats)}`"
+                f"🚷 **ɢʟᴏʙᴀʟʟʏ ʙᴀɴɴɪɴɢ {user.mention}**\n⏱ ᴇxᴘᴇᴄᴛᴇᴅ ᴛɪᴍᴇ: `{len(served_chats)}`"
             )
             number_of_chats = 0
             for num in served_chats:
@@ -54,13 +54,13 @@ async def global_banned(c: Client, message: Message):
                 except Exception:
                     pass
             ban_text = f"""
-🚷 **New Global ban on [{BOT_NAME}](https://t.me/{bn})
+🚷 **ɴᴇᴡ ɢʟᴏʙᴀʟ ʙᴀɴ ᴏɴ [{BOT_NAME}](https://t.me/{bn})
 
-**Origin:** {message.chat.title} [`{message.chat.id}`]
-**Sudo User:** {from_user.mention}
-**Banned User:** {user.mention}
-**Banned User ID:** `{user.id}`
-**Chats:** `{number_of_chats}`"""
+**ᴏʀɪɢɪɴ:** {message.chat.title} [`{message.chat.id}`]
+**sᴜᴅᴏ ᴜsᴇʀ:** {from_user.mention}
+**ʙᴀɴɴᴇᴅ ᴜsᴇʀ:** {user.mention}
+**ʙᴀɴɴᴇᴅ ᴜsᴇʀ ɪᴅ:** `{user.id}`
+**ᴄʜᴀᴛs:** `{number_of_chats}`"""
             try:
                 await m.delete()
             except Exception:
@@ -92,7 +92,7 @@ async def global_banned(c: Client, message: Message):
             for chat in chats:
                 served_chats.append(int(chat["chat_id"]))
             m = await message.reply_text(
-                f"🚷 **Globally banning {mention}**\n⏱ Expected time: `{len(served_chats)}`"
+                f"🚷 **ɢʟᴏʙᴀʟʟʏ ʙᴀɴɴɪɴɢ {mention}**\n⏱ ᴇxᴘᴇᴄᴛᴇᴅ ᴛɪᴍᴇ: `{len(served_chats)}`"
             )
             number_of_chats = 0
             for num in served_chats:
@@ -105,13 +105,13 @@ async def global_banned(c: Client, message: Message):
                 except Exception:
                     pass
             ban_text = f"""
-🚷 **New Global ban on [{BOT_NAME}](https://t.me/{bn})
+🚷 **ɴᴇᴡ ɢʟᴏʙᴀʟ ʙᴀɴ ᴏɴ [{BOT_NAME}](https://t.me/{bn})
 
-**Origin:** {message.chat.title} [`{message.chat.id}`]
-**Sudo User:** {from_user_mention}
-**Banned User:** {mention}
-**Banned User ID:** `{user_id}`
-**Chats:** `{number_of_chats}`"""
+**ᴏʀɪɢɪɴ:** {message.chat.title} [`{message.chat.id}`]
+**sᴜᴅᴏ ᴜsᴇʀ:** {from_user_mention}
+**ʙᴀɴɴᴇᴅ ᴜsᴇʀ:** {mention}
+**ʙᴀɴɴᴇᴅ ᴜsᴇʀ ɪᴅ:** `{user_id}`
+**ᴄʜᴀᴛs:** `{number_of_chats}`"""
             try:
                 await m.delete()
             except Exception:
@@ -130,7 +130,7 @@ async def ungban_global(c: Client, message: Message):
     if not message.reply_to_message:
         if len(message.command) != 2:
             await message.reply_text(
-                "**usage:**\n\n/ungban [username | user_id]"
+                "**ᴜsᴀɢᴇ:**\n\n/ungban [username | user_id]"
             )
             return
         user = message.text.split(None, 1)[1]
@@ -140,37 +140,37 @@ async def ungban_global(c: Client, message: Message):
         from_user = message.from_user
         BOT_ID = await c.get_me()
         if user.id == from_user.id:
-            await message.reply_text("You can't ungban yourself because you can't be gbanned !")
+            await message.reply_text("ʏᴏᴜ ᴄᴀɴ'ᴛ ᴜɴɢʙᴀɴ ʏᴏᴜʀsᴇʟғ ʙᴇᴄᴀᴜsᴇ ʏᴏᴜ ᴄᴀɴ'ᴛ ʙᴇ ɢʙᴀɴɴᴇᴅ !")
         elif user.id == BOT_ID:
-            await message.reply_text("I can't ungban myself because i can't be gbanned !")
+            await message.reply_text("ɪ ᴄᴀɴ'ᴛ ᴜɴɢʙᴀɴ ᴍʏsᴇʟғ ʙᴇᴄᴀᴜsᴇ ɪ ᴄᴀɴ'ᴛ ʙᴇ ɢʙᴀɴɴᴇᴅ !")
         elif user.id in SUDO_USERS:
-            await message.reply_text("Sudo users can't be gbanned/ungbanned !")
+            await message.reply_text("sᴜᴅᴏ ᴜsᴇʀs ᴄᴀɴ'ᴛ ʙᴇ ɢʙᴀɴɴᴇᴅ/ᴜɴɢʙᴀɴɴᴇᴅ !")
         else:
             is_gbanned = await is_gbanned_user(user.id)
             if not is_gbanned:
-                await message.reply_text("This user not ungbanned !")
+                await message.reply_text("ᴛʜɪs ᴜsᴇʀ ɴᴏᴛ ᴜɴɢʙᴀɴɴᴇᴅ !")
             else:
                 await c.unban_chat_member(chat_id, user.id)
                 await remove_gban_user(user.id)
-                await message.reply_text("✅ This user has ungbanned")
+                await message.reply_text("💚 ᴛʜɪs ᴜsᴇʀ ʜᴀs ᴜɴɢʙᴀɴɴᴇᴅ")
         return
     from_user_id = message.from_user.id
     user_id = message.reply_to_message.from_user.id
     mention = message.reply_to_message.from_user.mention
     BOT_ID = await c.get_me()
     if user_id == from_user_id:
-        await message.reply_text("You can't ungban yourself because you can't be gbanned !")
+        await message.reply_text("ʏᴏᴜ ᴄᴀɴ'ᴛ ᴜɴɢʙᴀɴ ʏᴏᴜʀsᴇʟғ ʙᴇᴄᴀᴜsᴇ ʏᴏᴜ ᴄᴀɴ'ᴛ ʙᴇ ɢʙᴀɴɴᴇᴅ !")
     elif user_id == BOT_ID:
         await message.reply_text(
-            "I can't ungban myself because i can't be gbanned !"
+            "ɪ ᴄᴀɴ'ᴛ ᴜɴɢʙᴀɴ ᴍʏsᴇʟғ ʙᴇᴄᴀᴜsᴇ ɪ ᴄᴀɴ'ᴛ ʙᴇ ɢʙᴀɴɴᴇᴅ !"
         )
     elif user_id in SUDO_USERS:
-        await message.reply_text("Sudo users can't be gbanned/ungbanned !")
+        await message.reply_text("sᴜᴅᴏ ᴜsᴇʀs ᴄᴀɴ'ᴛ ʙᴇ ɢʙᴀɴɴᴇᴅ/ᴜɴɢʙᴀɴɴᴇᴅ !")
     else:
         is_gbanned = await is_gbanned_user(user_id)
         if not is_gbanned:
-            await message.reply_text("This user not gbanned !")
+            await message.reply_text("ᴛʜɪs ᴜsᴇʀ ɴᴏᴛ ɢʙᴀɴɴᴇᴅ !")
         else:
             await c.unban_chat_member(chat_id, user_id)
             await remove_gban_user(user_id)
-            await message.reply_text("✅ This user has ungbanned")
+            await message.reply_text("💝 ᴛʜɪs ᴜsᴇʀ ʜᴀs ᴜɴɢʙᴀɴɴᴇᴅ")
