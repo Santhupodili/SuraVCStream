@@ -11,7 +11,7 @@ from sys import version as pyver
 from inspect import getfullargspec
 
 from config import BOT_USERNAME as bname
-from driver.surabot import bot
+from driver.santhubot import bot
 from driver.filters import command
 from pyrogram import Client, filters
 from driver.decorators import sudo_users_only, errors
@@ -185,4 +185,4 @@ async def bot_leave_group(_, message):
         await message.reply_text(f"❌ procces failed\n\nreason: `{e}`")
         print(e)
         return
-    await message.reply_text(f"✅ Bot successfully left from the Group:\n\n💭 » `{chat}`")
+    await message.reply_text(f"✅ ʙᴏᴛ sᴜᴄᴄᴇssғᴜʟʟʏ ʟᴇғᴛ ғʀᴏᴍ ᴛʜᴇ ɢʀᴏᴜᴘ:\n\n💭 » `{chat}`")
