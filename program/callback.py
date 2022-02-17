@@ -19,40 +19,42 @@ async def cbstart(_, query: CallbackQuery):
     await query.answer("home start")
     await query.edit_message_text(
         f"""👋 **Welcome [{query.message.chat.first_name}](tg://user?id={query.message.chat.id}) !**\n
-🤖 [{BOT_NAME}](https://t.me/{BOT_USERNAME}) **Allows you to play music🎶 and video🎥 on groups through the Telegram Group video chat!**
+🤖 [{BOT_NAME}](https://t.me/{BOT_USERNAME}) **ᴀʟʟᴏᴡs ʏᴏᴜ ᴛᴏ ᴘʟᴀʏ ᴍᴜsɪᴄ🎶 ᴀɴᴅ ᴠɪᴅᴇᴏ🎥 ᴏɴ ɢʀᴏᴜᴘs ᴛʜʀᴏᴜɢʜ ᴛʜᴇ ᴛᴇʟᴇɢʀᴀᴍ ɢʀᴏᴜᴘ ᴠɪᴅᴇᴏ ᴄʜᴀᴛ!**
 
-📕 **Find out all the Bot's commands and how they work by clicking on the » 🛠️ Check Commands button!**
+💚 **ғɪɴᴅ ᴏᴜᴛ ᴀʟʟ ᴛʜᴇ ʙᴏᴛ's ᴄᴏᴍᴍᴀɴᴅs ᴀɴᴅ ʜᴏᴡ ᴛʜᴇʏ ᴡᴏʀᴋ ʙʏ ᴄʟɪᴄᴋɪɴɢ ᴏɴ ᴛʜᴇ » 🛠️ ᴄʜᴇᴄᴋ ᴄᴏᴍᴍᴀɴᴅs ʙᴜᴛᴛᴏɴ!**
 
-🔖 **To know how to use this bot, please click on the » 📕 Read Basic Guide button!**
-
-👽 **To Deploy Your Own Source Click On The » 👉 My Source Code Button **
+💝 **ᴛᴏ ᴋɴᴏᴡ ʜᴏᴡ ᴛᴏ ᴜsᴇ ᴛʜɪs ʙᴏᴛ, ᴘʟᴇᴀsᴇ ᴄʟɪᴄᴋ ᴏɴ ᴛʜᴇ » 💚 ʀᴇᴀᴅ ʙᴀsɪᴄ ɢᴜɪᴅᴇ ʙᴜᴛᴛᴏɴ **
 """,
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "➕ Click to Add Me to your group ➕",
+                        "💙 ɴᴀɴᴜ ᴀᴅᴅ ᴄʜᴇsᴜ ᴋᴏʀᴀ ɴɪʙʙᴀ 💞",
                         url=f"https://t.me/{BOT_USERNAME}?startgroup=true",
                     )
                 ],
-                [InlineKeyboardButton("📕 Read Basic Guide", callback_data="cbhowtouse")],
+                [InlineKeyboardButton("💗 ʙᴀsɪᴄ ɢᴜɪᴅᴇ ʀᴀ ɴɪʙʙᴀ 🤍", callback_data="cbhowtouse")],
                 [
-                    InlineKeyboardButton("🛠️ Check Commands", callback_data="cbcmds"),
-                    InlineKeyboardButton("💲Donate", url=f"https://t.me/{OWNER_NAME}"),
+                    InlineKeyboardButton("✅ sᴀɴᴛʜᴜ ᴄᴏᴍᴍᴀɴs 💘", callback_data="cbcmds"),
+                    InlineKeyboardButton("🔰 ᴅᴏɴᴀᴛᴇ ʀᴀ ɴɪʙʙᴀ 🔰", url=f"https://t.me/{OWNER_NAME}"),
                 ],
                 [
                     InlineKeyboardButton(
-                        "👨🏾‍🤝‍👨🏼 Official Group", url=f"https://t.me/{GROUP_SUPPORT}"
+                        "💖 ɢʀᴏᴜᴘ ʀᴀ ɴɪʙʙᴀ 💞", url=f"https://t.me/{GROUP_SUPPORT}"
                     ),
                     InlineKeyboardButton(
-                        "🔗 Official Channel", url=f"https://t.me/{UPDATES_CHANNEL}"
+                        "💝 sᴀɴᴛʜᴜ ɴᴇᴛᴡᴏʀᴋ 🤎", url=f"https://t.me/{UPDATES_CHANNEL}"
                     ),
                 ],
                 [
                     InlineKeyboardButton(
-                        "👉 My Source Code", url="https://github.com/SRTheProgrammer/SuraVCStream"
+                        "❤ ʏᴏᴜᴛᴜʙᴇ 💚", url="https://youtube.com/channel/UC7QMr8IDR65vciXrwx4XLiQ"
                     )
                 ],
+                [    InlineKeyboardButton(
+                    "💛 ᴄᴏᴍᴍᴀɴᴅs 💔", url="https://telegra.ph/TITLE-02-09-53"
+                     )
+                ], 
             ]
         ),
         disable_web_page_preview=True,
@@ -63,21 +65,21 @@ async def cbstart(_, query: CallbackQuery):
 async def cbguides(_, query: CallbackQuery):
     await query.answer("user guide")
     await query.edit_message_text(
-        f"""❓ How to use this Bot ?, read the Guide below !
+        f"""🤔 ʜᴏᴡ ᴛᴏ ᴜsᴇ ᴛʜɪs ʙᴏᴛ ?, ʀᴇᴀᴅ ᴛʜᴇ ɢᴜɪᴅᴇ ʙᴇʟᴏᴡ !
 
-1.) First, add this bot to your Group.
-2.) Then, promote this bot as administrator on the Group also give all permissions except Anonymous admin.
-3.) After promoting this bot, type /reload in Group to update the admin data.
-3.) Invite @{ASSISTANT_NAME} to your group or type /userbotjoin to invite her (unfortunately the userbot will joined by itself when you type `/play (song name)` or `/vplay (song name)`).
-4.) Turn on/Start the video chat first before start to play video/music.
+𝟷.) ғɪʀsᴛ, ᴀᴅᴅ ᴛʜɪs ʙᴏᴛ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ.
+𝟸.) ᴛʜᴇɴ, ᴘʀᴏᴍᴏᴛᴇ ᴛʜɪs ʙᴏᴛ ᴀs ᴀᴅᴍɪɴɪsᴛʀᴀᴛᴏʀ ᴏɴ ᴛʜᴇ ɢʀᴏᴜᴘ ᴀʟsᴏ ɢɪᴠᴇ ᴀʟʟ ᴘᴇʀᴍɪssɪᴏɴs ᴇxᴄᴇᴘᴛ ᴀɴᴏɴʏᴍᴏᴜs ᴀᴅᴍɪɴ.
+𝟹.) ᴀғᴛᴇʀ ᴘʀᴏᴍᴏᴛɪɴɢ ᴛʜɪs ʙᴏᴛ, ᴛʏᴘᴇ /reload ɪɴ ɢʀᴏᴜᴘ ᴛᴏ ᴜᴘᴅᴀᴛᴇ ᴛʜᴇ ᴀᴅᴍɪɴ ᴅᴀᴛᴀ.
+𝟹.) ɪɴᴠɪᴛᴇ @{ASSISTANT_NAME} ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴏʀ ᴛʏᴘᴇ /userbotjoin ᴛᴏ ɪɴᴠɪᴛᴇ ʜᴇʀ (ᴜɴғᴏʀᴛᴜɴᴀᴛᴇʟʏ ᴛʜᴇ ᴜsᴇʀʙᴏᴛ ᴡɪʟʟ ᴊᴏɪɴᴇᴅ ʙʏ ɪᴛsᴇʟғ ᴡʜᴇɴ ʏᴏᴜ ᴛʏᴘᴇ `/play (sᴏɴɢ ɴᴀᴍᴇ)` ᴏʀ `/vplay (sᴏɴɢ ɴᴀᴍᴇ)`).
+𝟺.) ᴛᴜʀɴ ᴏɴ/start ᴛʜᴇ ᴠɪᴅᴇᴏ ᴄʜᴀᴛ ғɪʀsᴛ ʙᴇғᴏʀᴇ sᴛᴀʀᴛ ᴛᴏ ᴘʟᴀʏ ᴠɪᴅᴇᴏ/music.
 
 `- END, EVERYTHING HAS BEEN SETUP -`
 
-📌 If the userbot not joined to video chat, make sure if the video chat already turned on and the userbot in the chat.
+😘 ɪғ ᴛʜᴇ ᴜsᴇʀʙᴏᴛ ɴᴏᴛ ᴊᴏɪɴᴇᴅ ᴛᴏ ᴠɪᴅᴇᴏ ᴄʜᴀᴛ, ᴍᴀᴋᴇ sᴜʀᴇ ɪғ ᴛʜᴇ ᴠɪᴅᴇᴏ ᴄʜᴀᴛ ᴀʟʀᴇᴀᴅʏ ᴛᴜʀɴᴇᴅ ᴏɴ ᴀɴᴅ ᴛʜᴇ ᴜsᴇʀʙᴏᴛ ɪɴ ᴛʜᴇ ᴄʜᴀᴛ.
 
-💡 If you have a follow-up questions about this bot, you can tell it on my support chat here: @{GROUP_SUPPORT}.""",
+💘 ɪғ ʏᴏᴜ ʜᴀᴠᴇ ᴀ ғᴏʟʟᴏᴡ-ᴜᴘ ǫᴜᴇsᴛɪᴏɴs ᴀʙᴏᴜᴛ ᴛʜɪs ʙᴏᴛ, ʏᴏᴜ ᴄᴀɴ ᴛᴇʟʟ ɪᴛ ᴏɴ ᴍʏ sᴜᴘᴘᴏʀᴛ ᴄʜᴀᴛ ʜᴇʀᴇ: @{GROUP_SUPPORT}.""",
         reply_markup=InlineKeyboardMarkup(
-            [[InlineKeyboardButton("🔙 Go Back", callback_data="cbstart")]]
+            [[InlineKeyboardButton("◁", callback_data="cbstart")]]
         ),
     )
 
@@ -86,20 +88,20 @@ async def cbguides(_, query: CallbackQuery):
 async def cbcmds(_, query: CallbackQuery):
     await query.answer("commands menu")
     await query.edit_message_text(
-        f"""✨ **Hello [{query.message.chat.first_name}](tg://user?id={query.message.chat.id}) !**
+        f"""✨ **ʜᴇʟʟᴏ [{query.message.chat.first_name}](tg://user?id={query.message.chat.id}) !**
 
-» Choose the menu below to read the explanation & see the list of available Commands !
+» ᴄʜᴏᴏsᴇ ᴛʜᴇ ᴍᴇɴᴜ ʙᴇʟᴏᴡ ᴛᴏ ʀᴇᴀᴅ ᴛʜᴇ ᴇxᴘʟᴀɴᴀᴛɪᴏɴ & sᴇᴇ ᴛʜᴇ ʟɪsᴛ ᴏғ ᴀᴠᴀɪʟᴀʙʟᴇ ᴄᴏᴍᴍᴀɴᴅs !
 
-⚡ __Powered by {BOT_NAME} A.I__""",
+😘 __ᴘᴏᴡᴇʀᴇᴅ ʙʏ {BOT_NAME} ᴘʀᴇsᴇɴᴛs🎁""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("🥸Admin Cmd", callback_data="cbadmin"),
-                    InlineKeyboardButton("📕Sudo Cmd", callback_data="cbsudo"),
+                    InlineKeyboardButton("😊ᴀᴅᴍɪɴ ᴄᴏᴍᴍᴀɴᴅs 😊", callback_data="cbadmin"),
+                    InlineKeyboardButton("😍 sᴜᴅᴏ ᴄᴏᴍᴍᴀɴᴅs 😇", callback_data="cbsudo"),
                 ],[
-                    InlineKeyboardButton("©Basic Cmd", callback_data="cbbasic")
+                    InlineKeyboardButton("😝 ʀᴇᴛᴜʀɴ ᴛᴏ ʜᴏᴍᴇ 😊", callback_data="cbbasic")
                 ],[
-                    InlineKeyboardButton("🔙 Go Back", callback_data="cbstart")
+                    InlineKeyboardButton("◁", callback_data="cbstart")
                 ],
             ]
         ),
@@ -110,24 +112,24 @@ async def cbcmds(_, query: CallbackQuery):
 async def cbbasic(_, query: CallbackQuery):
     await query.answer("basic commands")
     await query.edit_message_text(
-        f"""🏮 here is the basic commands:
+        f"""🙄 ʜᴇʀᴇ ɪs ᴛʜᴇ ʙᴀsɪᴄ ᴄᴏᴍᴍᴀɴᴅs:
 
-» /play (song name/link) - play music on video chat
-» /vplay (video name/link) - play video on video chat
-» /vstream - play live video from yt live/m3u8
-» /playlist - show you the playlist
-» /video (query) - download video from youtube
-» /song (query) - download song from youtube
-» /lyric (query) - scrap the song lyric
-» /search (query) - search a youtube video link
+» /play (sᴏɴɢ ɴᴀᴍᴇ/ʟɪɴᴋ) - ᴘʟᴀʏ ᴍᴜsɪᴄ ᴏɴ ᴠɪᴅᴇᴏ ᴄʜᴀᴛ
+» /vplay (ᴠɪᴅᴇᴏ ɴᴀᴍᴇ/ʟɪɴᴋ) - ᴘʟᴀʏ ᴠɪᴅᴇᴏ ᴏɴ ᴠɪᴅᴇᴏ ᴄʜᴀᴛ
+» /vstream - ᴘʟᴀʏ ʟɪᴠᴇ ᴠɪᴅᴇᴏ ғʀᴏᴍ ʏᴛ ʟɪᴠᴇ/ᴍ𝟹ᴜ𝟾
+» /playlist - sʜᴏᴡ ʏᴏᴜ ᴛʜᴇ ᴘʟᴀʏʟɪsᴛ
+» /video (ǫᴜᴇʀʏ) - ᴅᴏᴡɴʟᴏᴀᴅ ᴠɪᴅᴇᴏ ғʀᴏᴍ ʏᴏᴜᴛᴜʙᴇ
+» /song (ǫᴜᴇʀʏ) - ᴅᴏᴡɴʟᴏᴀᴅ sᴏɴɢ ғʀᴏᴍ ʏᴏᴜᴛᴜʙᴇ
+» /lyric (ǫᴜᴇʀʏ) - sᴄʀᴀᴘ ᴛʜᴇ sᴏɴɢ ʟʏʀɪᴄ
+» /search (ǫᴜᴇʀʏ) - sᴇᴀʀᴄʜ ᴀ ʏᴏᴜᴛᴜʙᴇ ᴠɪᴅᴇᴏ ʟɪɴᴋ
 
-» /ping - show the bot ping status
-» /uptime - show the bot uptime status
-» /alive - show the bot alive info (in Group only)
+» /ping - sʜᴏᴡ ᴛʜᴇ ʙᴏᴛ ᴘɪɴɢ sᴛᴀᴛᴜs
+» /uptime - sʜᴏᴡ ᴛʜᴇ ʙᴏᴛ ᴜᴘᴛɪᴍᴇ sᴛᴀᴛᴜs
+» /alive - sʜᴏᴡ ᴛʜᴇ ʙᴏᴛ ᴀʟɪᴠᴇ ɪɴғᴏ (ɪɴ ɢʀᴏᴜᴘ ᴏɴʟʏ)
 
-⚡️ __Powered by {BOT_NAME} AI__""",
+💘 ᴘᴏᴡᴇʀᴇᴅ ʙʏ: {BOT_NAME} ᴘʀᴇsᴇɴᴛs 🎁""",
         reply_markup=InlineKeyboardMarkup(
-            [[InlineKeyboardButton("🔙 Go Back", callback_data="cbcmds")]]
+            [[InlineKeyboardButton("◁", callback_data="cbcmds")]]
         ),
     )
 
@@ -136,22 +138,22 @@ async def cbbasic(_, query: CallbackQuery):
 async def cbadmin(_, query: CallbackQuery):
     await query.answer("admin commands")
     await query.edit_message_text(
-        f"""🏮 here is the admin commands:
+        f"""🤎 ʜᴇʀᴇ ɪs ᴛʜᴇ ᴀᴅᴍɪɴ ᴄᴏᴍᴍᴀɴᴅs:
 
-» /pause - pause the stream
-» /resume - resume the stream
-» /skip - switch to next stream
-» /stop - stop the streaming
-» /vmute - mute the userbot on voice chat
-» /vunmute - unmute the userbot on voice chat
-» /volume `1-200` - adjust the volume of music (userbot must be admin)
-» /reload - reload bot and refresh the admin data
-» /userbotjoin - invite the userbot to join group
-» /userbotleave - order userbot to leave from group
+» /pause - ᴘᴀᴜsᴇ ᴛʜᴇ sᴛʀᴇᴀᴍ
+» /resume - ʀᴇsᴜᴍᴇ ᴛʜᴇ sᴛʀᴇᴀᴍ
+» /skip - sᴡɪᴛᴄʜ ᴛᴏ ɴᴇxᴛ sᴛʀᴇᴀᴍ
+» /stop - sᴛᴏᴘ ᴛʜᴇ sᴛʀᴇᴀᴍɪɴɢ
+» /vmute - ᴍᴜᴛᴇ ᴛʜᴇ ᴜsᴇʀʙᴏᴛ ᴏɴ ᴠᴏɪᴄᴇ ᴄʜᴀᴛ
+» /vunmute - ᴜɴᴍᴜᴛᴇ ᴛʜᴇ ᴜsᴇʀʙᴏᴛ ᴏɴ ᴠᴏɪᴄᴇ ᴄʜᴀᴛ
+» /volume `𝟷-𝟸𝟶𝟶` - ᴀᴅᴊᴜsᴛ ᴛʜᴇ ᴠᴏʟᴜᴍᴇ ᴏғ ᴍᴜsɪᴄ (ᴜsᴇʀʙᴏᴛ ᴍᴜsᴛ ʙᴇ ᴀᴅᴍɪɴ)
+» /reload - ʀᴇʟᴏᴀᴅ ʙᴏᴛ ᴀɴᴅ ʀᴇғʀᴇsʜ ᴛʜᴇ ᴀᴅᴍɪɴ ᴅᴀᴛᴀ
+» /userbotjoin - ɪɴᴠɪᴛᴇ ᴛʜᴇ ᴜsᴇʀʙᴏᴛ ᴛᴏ ᴊᴏɪɴ ɢʀᴏᴜᴘ
+» /userbotleave - ᴏʀᴅᴇʀ ᴜsᴇʀʙᴏᴛ ᴛᴏ ʟᴇᴀᴠᴇ ғʀᴏᴍ ɢʀᴏᴜᴘ
 
-⚡️ __Powered by {BOT_NAME} AI__""",
+💘 ᴘᴏᴡᴇʀᴇᴅ ʙʏ: {BOT_NAME} ᴘʀᴇsᴇɴᴛs""",
         reply_markup=InlineKeyboardMarkup(
-            [[InlineKeyboardButton("🔙 Go Back", callback_data="cbcmds")]]
+            [[InlineKeyboardButton("◁", callback_data="cbcmds")]]
         ),
     )
 
@@ -159,26 +161,26 @@ async def cbadmin(_, query: CallbackQuery):
 async def cbsudo(_, query: CallbackQuery):
     await query.answer("sudo commands")
     await query.edit_message_text(
-        f"""🏮 here is the sudo commands:
+        f"""💝 ʜᴇʀᴇ ɪs ᴛʜᴇ sᴜᴅᴏ ᴄᴏᴍᴍᴀɴᴅs:
 
-» /gban (`username` or `user id`) - for global banned people
-» /ungban (`username` or `user id`) - for un-global banned people
-» /speedtest - run the bot server speedtest
-» /sysinfo - show the system information
-» /update - update your bot to latest version
-» /restart - restart your bot
-» /leaveall - order userbot to leave from all group
-» /leavebot (`chat id`) - order bot to leave from the group you specify
+» /gban (`ᴜsᴇʀɴᴀᴍᴇ` ᴏʀ `ᴜsᴇʀ ɪᴅ`) - ғᴏʀ ɢʟᴏʙᴀʟ ʙᴀɴɴᴇᴅ ᴘᴇᴏᴘʟᴇ
+» /ungban (`ᴜsᴇʀɴᴀᴍᴇ` ᴏʀ `ᴜsᴇʀ ɪᴅ`) - ғᴏʀ ᴜɴ-ɢʟᴏʙᴀʟ ʙᴀɴɴᴇᴅ ᴘᴇᴏᴘʟᴇ
+» /speedtest - ʀᴜɴ ᴛʜᴇ ʙᴏᴛ sᴇʀᴠᴇʀ sᴘᴇᴇᴅᴛᴇsᴛ
+» /sysinfo - sʜᴏᴡ ᴛʜᴇ sʏsᴛᴇᴍ ɪɴғᴏʀᴍᴀᴛɪᴏɴ
+» /update - ᴜᴘᴅᴀᴛᴇ ʏᴏᴜʀ ʙᴏᴛ ᴛᴏ ʟᴀᴛᴇsᴛ ᴠᴇʀsɪᴏɴ
+» /restart - ʀᴇsᴛᴀʀᴛ ʏᴏᴜʀ ʙᴏᴛ
+» /leaveall - ᴏʀᴅᴇʀ ᴜsᴇʀʙᴏᴛ ᴛᴏ ʟᴇᴀᴠᴇ ғʀᴏᴍ ᴀʟʟ ɢʀᴏᴜᴘ
+» /leavebot (`ᴄʜᴀᴛ ɪᴅ`) - ᴏʀᴅᴇʀ ʙᴏᴛ ᴛᴏ ʟᴇᴀᴠᴇ ғʀᴏᴍ ᴛʜᴇ ɢʀᴏᴜᴘ ʏᴏᴜ sᴘᴇᴄɪғʏ
 
-» /eval - execute any code
-» /sh - run any command
+» /eval - ᴇxᴇᴄᴜᴛᴇ ᴀɴʏ ᴄᴏᴅᴇ
+» /sh - ʀᴜɴ ᴀɴʏ ᴄᴏᴍᴍᴀɴᴅ
 
-» /broadcast (`message`) - send a broadcast message to all groups entered by bot
-» /broadcast_pin (`message`) - send a broadcast message to all groups entered by bot with the chat pin
+» /broadcast (`ᴍᴇssᴀɢᴇ`) - sᴇɴᴅ ᴀ ʙʀᴏᴀᴅᴄᴀsᴛ ᴍᴇssᴀɢᴇ ᴛᴏ ᴀʟʟ ɢʀᴏᴜᴘs ᴇɴᴛᴇʀᴇᴅ ʙʏ ʙᴏᴛ
+» /broadcast_pin (`ᴍᴇssᴀɢᴇ`) - sᴇɴᴅ ᴀ ʙʀᴏᴀᴅᴄᴀsᴛ ᴍᴇssᴀɢᴇ ᴛᴏ ᴀʟʟ ɢʀᴏᴜᴘs ᴇɴᴛᴇʀᴇᴅ ʙʏ ʙᴏᴛ ᴡɪᴛʜ ᴛʜᴇ ᴄʜᴀᴛ ᴘɪɴ
 
-⚡ __Powered by {BOT_NAME} AI__""",
+😘 ᴘᴏᴡᴇʀᴇᴅ ʙʏ: {GROUP_NAME} ᴀɪ__""",
         reply_markup=InlineKeyboardMarkup(
-            [[InlineKeyboardButton("🔙 Go Back", callback_data="cbcmds")]]
+            [[InlineKeyboardButton("◁", callback_data="cbcmds")]]
         ),
     )
 
