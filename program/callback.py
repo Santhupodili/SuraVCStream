@@ -52,12 +52,12 @@ async def cbstart(_, query: CallbackQuery):
                     ), 
                     InlineKeyboardButton(
                         "💛 ᴄᴏᴍᴍᴀɴᴅs 💔", url="https://telegra.ph/TITLE-02-09-53"
-                    ), 
-                ] 
-            ], 
-        )
+                    ) 
+                ], 
+            ]
+        ), 
         disable_web_page_preview=True,
-    ), 
+    )
 
 
 @Client.on_callback_query(filters.regex("cbhowtouse"))
