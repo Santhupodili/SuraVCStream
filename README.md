@@ -57,7 +57,9 @@
 ## Heroku Deployment
 The easy way to host this bot, deploy to Heroku, Change the app country to Europe (it will help to make the bot stable).
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg?template=https://github.com/Santhupodili/SuraVCStream.git) 
+
+# ʜᴇʀoᴋᴜ ᴅᴇᴘʟᴏʏ
+<p align="center"><a href="https://heroku.com/deploy?template=https://github.com/Santhupodili/SuraVCStream.git"> <img src="https://img.shields.io/badge/Deploy%20To%20Heroku-sparkle?style=for-the-badge&logo=heroku" width="1350" height="45.45"/></a></p
 
 ## VPS Deployment 
 Get the best Quality of streaming performance by hosting it on VPS, Steps:
