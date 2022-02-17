@@ -1,5 +1,5 @@
 import asyncio
-from driver.surabot import user
+from driver.santhubot import user
 from pyrogram.types import Message
 from pyrogram import Client, filters
 from config import BOT_USERNAME, SUDO_USERS
@@ -21,9 +21,9 @@ async def join_chat(c: Client, m: Message):
                 "https://t.me/+", "https://t.me/joinchat/"
             )
             await user.join_chat(invitelink)
-            return await user.send_message(chat_id, "✅ userbot joined chat")
+            return await user.send_message(chat_id, "💖 ᴜsᴇʀʙᴏᴛ ᴊᴏɪɴᴇᴅ ᴄʜᴀᴛ")
     except UserAlreadyParticipant:
-        return await user.send_message(chat_id, "✅ userbot already in chat")
+        return await user.send_message(chat_id, "💘 ᴜsᴇʀʙᴏᴛ ᴀʟʀᴇᴀᴅʏ ɪɴ ᴄʜᴀᴛ")
 
 
 @Client.on_message(
@@ -36,12 +36,12 @@ async def leave_chat(_, m: Message):
         await user.leave_chat(chat_id)
         return await _.send_message(
             chat_id,
-            "✅ userbot leaved chat",
+            "🥺 ᴜsᴇʀʙᴏᴛ ʟᴇᴀᴠᴇᴅ ᴄʜᴀᴛ",
         )
     except UserNotParticipant:
         return await _.send_message(
             chat_id,
-            "❌ userbot already leave chat",
+            "🥺 ᴜsᴇʀʙᴏᴛ ᴀʟʀᴇᴀᴅʏ ʟᴇᴀᴠᴇ ᴄʜᴀᴛ",
         )
 
 
@@ -54,23 +54,23 @@ async def leave_all(client, message):
     left = 0
     failed = 0
     
-    msg = await message.reply("🔄 Userbot leaving all Group !")
+    msg = await message.reply("🥺 ᴜsᴇʀʙᴏᴛ ʟᴇᴀᴠɪɴɢ ᴀʟʟ ɢʀᴏᴜᴘ !")
     async for dialog in user.iter_dialogs():
         try:
             await user.leave_chat(dialog.chat.id)
             left += 1
             await msg.edit(
-                f"Userbot leaving all Group...\n\nLeft: {left} chats.\nFailed: {failed} chats."
+                f"ᴜsᴇʀʙᴏᴛ ʟᴇᴀᴠɪɴɢ ᴀʟʟ ɢʀᴏᴜᴘ...\n\nLeft: {left} chats.\nFailed: {failed} chats."
             )
         except BaseException:
             failed += 1
             await msg.edit(
-                f"Userbot leaving...\n\nLeft: {left} chats.\nFailed: {failed} chats."
+                f"ᴜsᴇʀʙᴏᴛ ʟᴇᴀᴠɪɴɢ...\n\nLeft: {left} chats.\nFailed: {failed} chats."
             )
         await asyncio.sleep(0.7)
     await msg.delete()
     await client.send_message(
-        message.chat.id, f"✅ Left from: {left} chats.\n❌ Failed in: {failed} chats."
+        message.chat.id, f"🥺 ʟᴇғᴛ ғʀᴏᴍ: {left} chats.\n❌ Failed in: {failed} chats."
     )
 
 
