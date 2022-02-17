@@ -86,14 +86,13 @@ async def start_(client: Client, message: Message):
                 [
                     InlineKeyboardButton(
                         "❤ ʏᴏᴜᴛᴜʙᴇ 💚", url="https://youtube.com/channel/UC7QMr8IDR65vciXrwx4XLiQ"
-                    )
-                ],
-                [    InlineKeyboardButton(
-                    "💛 ᴄᴏᴍᴍᴀɴᴅs 💔", url="https://telegra.ph/TITLE-02-09-53"
-                     )
+                    ), 
+                    InlineKeyboardButton(
+                        "💛 ᴄᴏᴍᴍᴀɴᴅs 💔", url="https://telegra.ph/TITLE-02-09-53"
+                    ) 
                 ], 
             ]
-        ),
+        ), 
         disable_web_page_preview=True,
     )
 
@@ -112,7 +111,7 @@ async def alive(c: Client, message: Message):
             [
                 InlineKeyboardButton("💖ɴᴇᴛᴡᴏʀᴋ💖", url=f"https://t.me/{GROUP_SUPPORT}"),
                 InlineKeyboardButton(
-                    "💚ᴏғғɪᴄɪᴀʟ ᴄʜᴀɴɴᴇʟ💚", url=f"https://t.me/{UPDATES_CHANNEL}"
+                    "💚ᴄʜᴀɴɴᴇʟ💚", url=f"https://t.me/{UPDATES_CHANNEL}"
                 ),
             ]
         ]
