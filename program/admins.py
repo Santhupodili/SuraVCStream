@@ -1,5 +1,5 @@
 from cache.admins import admins
-from driver.surabot import call_py, bot
+from driver.santhubot import call_py, bot
 from pyrogram import Client, filters
 from driver.queues import QUEUE, clear_queue
 from driver.filters import command, other_filters
@@ -208,7 +208,7 @@ async def cbstop(_, query: CallbackQuery):
         try:
             await call_py.leave_group_call(chat_id)
             clear_queue(chat_id)
-            await query.edit_message_text("✅ **this streaming has ended**", reply_markup=close_mark)
+            await query.edit_message_text("✅ **ᴛʜɪs sᴛʀᴇᴀᴍɪɴɢ ʜᴀs ᴇɴᴅᴇᴅ**", reply_markup=close_mark)
         except Exception as e:
             await query.edit_message_text(f"🚫 **error:**\n\n`{e}`", reply_markup=close_mark)
     else:
