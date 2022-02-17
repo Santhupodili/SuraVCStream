@@ -1,11 +1,11 @@
-<p align="center"><a href="https://t.me/SuraVCStreamBot"><img src="https://github.com/SRTheProgrammer/SuraVCStream/raw/main/driver/suravclogo.jpg"></a></p>
+<p align="center"><a href="https://t.me/santhuvc"><img src="https://github.com/Santhoshpodilibot/SuraVCStream/raw/main/driver/Picsart_22-02-17_14-32-21-961.png"></a></p>
 <p align="center">
-    <br><b>Sura VC Stream is an Advanced Telegram Bot that's allow you to play Video & Music on Telegram Group Video Chat</b><br>
+    <br><b>santhu music is an Advanced Telegram Bot that's allow you to play Video & Music on Telegram Group Video Chat</b><br>
 </p>
 
 ## Preview
 <p align="center">
-  <img src="https://telegra.ph/file/21a41d5e4636289c2d768.png">
+  <img src="https://telegra.ph/file/61a5e31485a77e7726740.jpg">
 </p>
 
 ## ✨ Features
@@ -47,47 +47,18 @@
 | `/leaveall` | order the userbot to leave from all group (sudo only) |
 | `/update` | update your bot directly without leaving telegram (sudo only) |
 | `/restart` | restart your bot directly without leaving telegram (sudo only) |
-| `/clean` | clean all raw files |
-| `/rmd` | clean all downloaded files |
 
-## Generate Pyrogram session string from below
+🧐 ɢᴇɴᴇʀᴀᴛᴇ ʏᴏᴜʀ sᴛʀɪɴɢ sᴇssɪᴏɴ
 
 [![GenerateString](https://img.shields.io/badge/repl.it-generateString-yellowgreen)](https://replit.com/@SRTheProgrammer/Session-Generator#main.py)
 
-## Heroku Deployment
-The easy way to host this bot, deploy to Heroku, Change the app country to Europe (it will help to make the bot stable).
+🥱 sᴛʀɪɴɢ ʙᴏᴛ 😯
 
+<a href="https://t.me/Santhustringbot"><img src="https://img.shields.io/badge/ᴄʟɪᴄᴋ-Gᴇɴʀᴀᴛᴇ%20sᴛʀɪɴɢ-blue.svg?style=for-the-badge&logo=Telegram"></a> 
 
-# ʜᴇʀoᴋᴜ ᴅᴇᴘʟᴏʏ
-<p align="center"><a href="https://heroku.com/deploy?template=https://github.com/Santhupodili/SuraVCStream.git"> <img src="https://img.shields.io/badge/Deploy%20To%20Heroku-sparkle?style=for-the-badge&logo=heroku" width="1350" height="45.45"/></a></p
+🔥 ᴅᴇᴘʟᴏʏ ᴛᴏ ʜᴇʀᴏᴋᴜ 🔥
 
-## VPS Deployment 
-Get the best Quality of streaming performance by hosting it on VPS, Steps:
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/santhosh-podili/santhoshpodili)
 
-```sh
-sudo apt update && apt upgrade -y
-sudo apt install git curl python3-pip ffmpeg -y
-pip3 install -U pip
-curl -sL https://deb.nodesource.com/setup_16.x | bash -
-sudo apt-get install -y nodejs
-npm i -g npm
-git clone https://github.com/SRTheProgrammer/SuraVCStream # clone the repo.
-cd SuraVCStream
-pip3 install -U -r requirements.txt
-cp example.env .env # use vim to edit ENVs
-vim .env # fill up the ENVs (Steps: press i to enter in insert mode then edit the file. Press Esc to exit the editing mode then type :wq! and press Enter key to save the file).
-python3 main.py # run the bot.
-
-# continue the host with screen or anything else, thanks for reading.
-```
-
-# Credits 💖
-- [Me](https://github.com/SRTheProgrammer) ``Just Modify``
-- [Levina](https://github.com/levina-lab) ``Dev``
-- [Zxce3](https://github.com/Zxce3) ``Dev``
-- [tofikdn](https://github.com/tofikdn) ``Dev``
-- [Laky's](https://github.com/Laky-64) for [``py-tgcalls``](https://github.com/pytgcalls/pytgcalls)
-- [Dan](https://github.com/delivrance) for [``Pyrogram``](https://github.com/pyrogram)
-
-### Support & Updates 🎑
-<a href="https://t.me/SuraBotSupport"><img src="https://img.shields.io/badge/Join-Group%20Support-blue.svg?style=for-the-badge&logo=Telegram"></a> <a href="https://t.me/SuraBotStats"><img src="https://img.shields.io/badge/Join-Updates%20Channel-blue.svg?style=for-the-badge&logo=Telegram"></a>
+💞 sᴜᴘᴘᴏʀᴛ ᴀɴᴅ ᴜᴘᴅᴀᴛᴇs 💓
+<a href="https://t.me/santhubotupadates"><img src="https://img.shields.io/badge/Join-Group%20Support-blue.svg?style=for-the-badge&logo=Telegram"></a>       <a href="https://t.me/santhuvc"><img src="https://img.shields.io/badge/Join-Updates%20Channel-blue.svg?style=for-the-badge&logo=Telegram"></a>
