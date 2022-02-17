@@ -161,13 +161,13 @@ async def new_chat(c: Client, m: Message):
     for member in m.new_chat_members:
         if member.id == bot_id:
             return await m.reply(
-                "❤️ Thanks for adding me to the **Group** !\n\n"
-                "Appoint me as administrator in the **Group**, otherwise I will not be able to work properly, and don't forget to type `/userbotjoin` to invite the assistant to chat.\n\n"
-                "Once done, then type `/reload`",
+                "❤️ ᴛʜᴀɴᴋs ғᴏʀ ᴀᴅᴅɪɴɢ ᴍᴇ ᴛᴏ ᴛʜᴇ **Group** !\n\n"
+                "ᴀᴘᴘᴏɪɴᴛ ᴍᴇ ᴀs ᴀᴅᴍɪɴɪsᴛʀᴀᴛᴏʀ ɪɴ ᴛʜᴇ **Group**, ᴏᴛʜᴇʀᴡɪsᴇ ɪ ᴡɪʟʟ ɴᴏᴛ ʙᴇ ᴀʙʟᴇ ᴛᴏ ᴡᴏʀᴋ ᴘʀᴏᴘᴇʀʟʏ, ᴀɴᴅ ᴅᴏɴ'ᴛ ғᴏʀɢᴇᴛ ᴛᴏ ᴛʏᴘᴇ  `/userbotjoin` ᴛᴏ ɪɴᴠɪᴛᴇ ᴛʜᴇ ᴀssɪsᴛᴀɴᴛ ᴛᴏ ᴄʜᴀᴛ.\n\n"
+                "ᴏɴᴄᴇ ᴅᴏɴᴇ, ᴛʜᴇɴ ᴛʏᴘᴇ `/reload`",
                 reply_markup=InlineKeyboardMarkup(
                     [
                         [
-                            InlineKeyboardButton("💚ᴏғғɪᴄɪᴀʟ channel💚", url=f"https://t.me/{UPDATES_CHANNEL}"),
+                            InlineKeyboardButton("💚ᴄʜᴀɴɴᴇʟ💚", url=f"https://t.me/{UPDATES_CHANNEL}"),
                             InlineKeyboardButton("💖ɴᴇᴛᴡᴏʀᴋ💖", url=f"https://t.me/{GROUP_SUPPORT}")
                         ],
                         [
@@ -193,5 +193,5 @@ async def chat_watcher_func(_, message: Message):
         except Exception:
             return
         await message.reply_text(
-            f"👮🏼 (> {suspect} <)\n\n**Gbanned** user detected, that user has been gbanned by sudo user and was blocked from this Chat !\n\n🚫 **Reason:** potential spammer and abuser."
+            f"👮🏼 (> {suspect} <)\n\n**ɢʙᴀɴɴᴇᴅ** ᴜsᴇʀ ᴅᴇᴛᴇᴄᴛᴇᴅ, ᴛʜᴀᴛ ᴜsᴇʀ ʜᴀs ʙᴇᴇɴ ɢʙᴀɴɴᴇᴅ ʙʏ sᴜᴅᴏ ᴜsᴇʀ ᴀɴᴅ ᴡᴀs ʙʟᴏᴄᴋᴇᴅ ғʀᴏᴍ ᴛʜɪs ᴄʜᴀᴛ !\n\n🚫 **ʀᴇᴀsᴏɴ:** ᴘᴏᴛᴇɴᴛɪᴀʟ sᴘᴀᴍᴍᴇʀ ᴀɴᴅ ᴀʙᴜsᴇʀ."
         )
