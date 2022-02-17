@@ -1,4 +1,3 @@
-<p align="center"><a href="https://t.me/santhuvc"><img src="https://github.com/Santhoshpodilibot/SuraVCStream/raw/main/driver/Picsart_22-02-17_14-32-21-961.png"></a></p>
 <p align="center">
     <br><b>santhu music is an Advanced Telegram Bot that's allow you to play Video & Music on Telegram Group Video Chat</b><br>
 </p>
